@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>menu responsivo</title>
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+		var i = true;
+			$("#hide").click(function(){
+				$("#items").toggle();
+		});
+
+	$(window).resize(function(){
+		var ancho = $(window).width();
+			if (ancho > 420)
+				$("#items").addClass("show");
+			
+		});
+
+		$("#items li a").click(function (){
+			$("#items li a").removeClass("resaltado");
+			$(this).addClass("resaltado");
+		});
+});
+</script>
+</head>
+<body>
+	<nav>
+		<ul id="menu" >
+			<div id="hide"><li><a href="#">menu</a></li></div>
+			<div id="items">
+				<li class="item"><a href="#">item</a> </li>
+				<li class="item"><a href="#">item</a> </li>
+				<li class="item"><a href="#">item</a> </li>
+			</div>
+
+		</ul>
+	</nav>
+
+
+</body>
+</html>

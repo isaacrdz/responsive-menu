@@ -1,0 +1,61 @@
+nav
+{
+	background-color: black;
+}
+
+nav ul
+{
+	background-color: blue;
+}
+
+nav ul li 
+{
+	display: inline-block;
+	list-style: none;
+	background: yellow ;
+	padding: .5em;
+}
+
+nav ul li a
+{
+	background: gray;
+	display:block;
+}
+
+.show
+{
+	display: block;
+}
+
+.resaltado
+{
+	background: white;
+}
+
+
+
+@media all and (max-width: 420px){
+nav ul div li 
+	{
+		display:  block;
+		background: green;
+		width: 100%;
+		text-align: center;
+	}
+nav ul div li a:hover
+{
+	background: white;
+}
+
+#hide
+{
+	display: block;
+}
+
+#hide li a
+{
+	background: orange;
+	color: rgb(240,240,240);
+}
+
+}
